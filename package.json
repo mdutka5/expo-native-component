@@ -26,7 +26,9 @@
   "author": "Marcin Dutka <marcin.dutka.05@gmail.com> (https://github.com/mdutka5)",
   "license": "MIT",
   "homepage": "https://github.com/mdutka5/expo-native-component#readme",
-  "dependencies": {},
+  "dependencies": {
+    "expo-modules-core": "^57.0.7"
+  },
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@types/jest": "^29.2.1",

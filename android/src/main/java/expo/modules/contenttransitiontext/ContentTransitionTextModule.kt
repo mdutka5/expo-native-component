@@ -5,6 +5,12 @@ import expo.modules.kotlin.modules.ModuleDefinition
 
 class ContentTransitionTextModule : Module() {
   override fun definition() = ModuleDefinition {
-    Name("ContentTransitionText")
+    Name("ContentTransitionTextView")
+
+    View(ContentTransitionTextView::class) {
+      Prop("value") { view: ContentTransitionTextView, value: Double ->
+        view.setValue(value)
+      }
+    }
   }
 }
