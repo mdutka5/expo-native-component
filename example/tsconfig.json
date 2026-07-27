@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "content-transition-text": ["../src/index"],
+      "content-transition-text/*": ["../src/*"]
+    }
+  }
+}

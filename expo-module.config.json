@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android", "web"],
+  "apple": {
+    "modules": ["ContentTransitionTextModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.contenttransitiontext.ContentTransitionTextModule"]
+  }
+}
