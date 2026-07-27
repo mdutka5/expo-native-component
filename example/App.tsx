@@ -1,14 +1,10 @@
-import { ContentTransitionTextView } from 'content-transition-text';
-import { useState } from 'react';
-import { View, StyleSheet, Button } from 'react-native';
+import { AnimatedIOSClockView } from 'content-transition-text';
+import { View, StyleSheet } from 'react-native';
 
 export default function App() {
-  const [value, setValue] = useState(39);
-
   return (
     <View style={styles.container}>
-      <ContentTransitionTextView value={value} style={{ width: 400, height: 80 }} />
-      <Button title="Increment" onPress={() => setValue(value + 7)} />
+      <AnimatedIOSClockView style={{ width: 400, height: 80 }} />
     </View>
   );
 }

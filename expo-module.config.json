@@ -1,9 +1,14 @@
 {
   "platforms": ["apple", "android", "web"],
   "apple": {
-    "modules": ["ContentTransitionTextViewModule"]
+    "modules": [
+      "ContentTransitionTextViewModule",
+      "AnimatedIOSClockViewModule"
+    ]
   },
   "android": {
-    "modules": ["expo.modules.contenttransitiontext.ContentTransitionTextModule"]
+    "modules": [
+      "expo.modules.contenttransitiontext.ContentTransitionTextModule"
+    ]
   }
 }

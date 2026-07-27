@@ -6,8 +6,20 @@ public class ContentTransitionTextViewModule: Module {
 
     View(ContentTransitionTextView.self) {
       Prop("value") { (view: ContentTransitionTextView, value: Double) in
-      view.value = value
+        view.value = value
+      }
     }
   }
 }
+
+public class AnimatedIOSClockViewModule: Module {
+  public func definition() -> ModuleDefinition {
+    Name("AnimatedIOSClockView")
+
+    View(AnimatedIOSClockView.self) {
+      AsyncFunction("getValues") { (view: AnimatedIOSClockView) -> [String: Double] in
+        return ["hours": view.hours, "minutes": view.minutes]      
+      }
+    }
+  }
 }
