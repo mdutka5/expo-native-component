@@ -30,15 +30,8 @@ class ContentTransitionTextView: ExpoView {
 struct ContentTransitionTextContent: View {
     var value: Double
 
-    private static let currencyFormatter: NumberFormatter = {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
-        formatter.currencySymbol = "$"
-        return formatter
-    }()
-
     var body: some View {
-        Text(Self.currencyFormatter.string(from: value as NSNumber) ?? "$0.00")
+        Text(value, format: .number.precision(.fractionLength(0)))
             .contentTransition(.numericText(value: value))
             .animation(.snappy, value: value)
             .font(.largeTitle)

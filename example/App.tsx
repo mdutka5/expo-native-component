@@ -8,7 +8,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <ContentTransitionTextView value={value} style={{ width: 400, height: 80 }} />
-      <Button title="Increment" onPress={() => setValue(value + 11.11)} />
+      <Button title="Increment" onPress={() => setValue(value + 7)} />
     </View>
   );
 }
